@@ -43,5 +43,5 @@ class DespesaHandler(ABC):
         ).model_dump()
 
     @abstractmethod
-    def handle_pagamento_pagamento(self):
+    def handle_processamento_despesa(self):
         pass

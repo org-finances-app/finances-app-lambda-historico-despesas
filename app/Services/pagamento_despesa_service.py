@@ -35,7 +35,7 @@ class PagamentoDespesaService:
 
     @property
     def date_to_process(self):
-        return "2025-01-21"
+        # return "2025-01-21"
         # Run the service for yesterday
         yesterday = date.today() - timedelta(days=1)
         return yesterday.strftime("%Y-%m-%d")
@@ -75,7 +75,7 @@ class PagamentoDespesaService:
                             Item=despesa_handler.get_historico()
                         )
 
-                        despesa_handler.handle_pagamento_pagamento()
+                        despesa_handler.handle_processamento_despesa()
 
                     except Exception as e:
                         LOGGER.error(

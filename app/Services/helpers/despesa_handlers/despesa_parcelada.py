@@ -2,7 +2,7 @@ from .despesa_handler import DespesaHandler
 
 
 class DespesaParceladaHandler(DespesaHandler):
-    def handle_pagamento_pagamento(self):
+    def handle_processamento_despesa(self):
         qtde_parcelas = self.despesa.get("quantidadeParcelas")
         parcela_atual = int(self.despesa.get("parcelaAtual"))
         parcela_atual += 1
