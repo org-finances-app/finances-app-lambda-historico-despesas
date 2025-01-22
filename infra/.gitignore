@@ -1,0 +1,8 @@
+venv
+tempCodeRunnerFile.*
+terraform.tfstate
+.terraform.lock.hcl
+*.zip
+layer_dependencies
+.terraform
+terraform.tfstate.backup
